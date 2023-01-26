@@ -11,6 +11,8 @@
 *.log.*
 *.sig
 
+build.gradle
+
 pkg/
 src/
 
