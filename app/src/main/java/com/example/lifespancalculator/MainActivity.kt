@@ -13,9 +13,11 @@ class MainActivity : AppCompatActivity() {
 
         val btnClickMe = findViewById<Button>(R.id.someButton)
         val textView = findViewById<TextView>(R.id.someTextView)
+        var clickCounter: Int = 0
+        textView.text = "0"
         btnClickMe.setOnClickListener {
-            btnClickMe.text = "LOL you clicked me"
-            textView.text = "this text view is changed by that goofy ass button"
+            clickCounter += 1
+            textView.text = clickCounter.toString()
         }
     }
 }
