@@ -1,20 +1,17 @@
 package com.example.lifespancalculator
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-<<<<<<< HEAD
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import java.lang.*;
-=======
->>>>>>> origin
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-<<<<<<< HEAD
 
         val btnClickMe = findViewById<Button>(R.id.someButton)
         val textView = findViewById<TextView>(R.id.someTextView)
@@ -26,7 +23,5 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "hey, you clicked the button",
                 Toast.LENGTH_LONG).show()
         }
-=======
->>>>>>> origin
     }
 }
