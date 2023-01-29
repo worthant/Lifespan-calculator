@@ -21,8 +21,10 @@ class MainActivity : AppCompatActivity() {
         btnClickMe.setOnClickListener {
             clickCounter = clickCounter.inc()
             textView.text = clickCounter.toString()
-            Toast.makeText(this, "hey, you clicked the button",
-                Toast.LENGTH_LONG).show()
+            Toast.makeText(
+                this, "hey, you clicked the button",
+                Toast.LENGTH_LONG
+            ).show()
         }
     }
 }
