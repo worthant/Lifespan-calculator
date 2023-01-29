@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import java.lang.*;
+import java.math.BigDecimal
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,10 +16,10 @@ class MainActivity : AppCompatActivity() {
 
         val btnClickMe = findViewById<Button>(R.id.someButton)
         val textView = findViewById<TextView>(R.id.someTextView)
-        var clickCounter: Short = 0
+        var clickCounter: Byte = 0
         textView.text = "0"
         btnClickMe.setOnClickListener {
-            clickCounter = (Math.pow((clickCounter + 1).toDouble(), 1.4)).toInt().toShort()
+            clickCounter = clickCounter.inc()
             textView.text = clickCounter.toString()
             Toast.makeText(this, "hey, you clicked the button",
                 Toast.LENGTH_LONG).show()
