@@ -54,10 +54,9 @@
         android:text="IN MINUTES"
         android:background="@drawable/rounded_corner"
         android:height="55dp"
-        android:width="200dp"
         android:textColor="@color/white"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -65,13 +64,51 @@
 
     <Button
         android:id="@+id/someButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button"
-        android:backgroundTint="@color/highlightColor"
-        app:layout_constraintBottom_toTopOf="@+id/someTextView"
+        android:background="@drawable/rounded_corner"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="23.12.2004"
+            android:background="@drawable/rounded_corner"
+            android:height="55dp"
+            android:width="200dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:width="200dp"
+            android:height="55dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="Selected Date"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
 </LinearLayout>
