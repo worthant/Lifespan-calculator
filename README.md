@@ -1,6 +1,5 @@
 # Lifespan-calculator
-This is my first app. It is created for learning android developement using Kotlin and for practising git in Linux(Manjaro) cmd.
-
+This is my first app. It is created for learning android developement using Kotlin and for practising git usage on Manjaro.
 - First steps: created `clickCounter`, tried overflowing `short` data type and `deployed` it to my Samung A52
 
 | Code | Debug and overflow successful! |
